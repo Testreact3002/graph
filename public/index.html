@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+     <title></title>
+     <meta charset="utf-8">
+     <style>
+        body{
+	   margin: 0;	
+	   background-color: gray;
+	}
+	.graph{
+          width: 90%;
+	  height: 100vh;
+	  cursor: pointer;
+	  min-height: 100px;
+	  min-width: 100px;
+	}
+
+	.graph.graph--animated{
+           pointer-events: none;
+	   cursor: wait;
+	}
+	
+     </style>
+  </head>
+  <body>
+            <canvas is="graph-canvas" class="graph"></canvas>
+     <script src="./main.js"></script>
+  </body>
+</HTML>
